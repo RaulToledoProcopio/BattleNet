@@ -27,7 +27,7 @@ fun Header(modifier: Modifier = Modifier) {
     ) {
         // Logo Battlenet
         Image(
-            painter = painterResource(id = R.drawable.logo), // Añade tu logo en drawable
+            painter = painterResource(id = R.drawable.logo),
             contentDescription = "Logo",
             modifier = Modifier
                 .align(Alignment.Center)
@@ -37,15 +37,14 @@ fun Header(modifier: Modifier = Modifier) {
         // Iconos en la esquina superior derecha
         Row(
             modifier = Modifier
-                // Ajustar margen superior y derecho para acercar los íconos al borde
-                .align(Alignment.TopEnd), // Posicionarlos en la esquina superior derecha
-            horizontalArrangement = Arrangement.spacedBy(8.dp) // Espacio entre íconos
+                .align(Alignment.TopEnd),
+            horizontalArrangement = Arrangement.spacedBy(8.dp)
         ) {
             Icon(
                 imageVector = Icons.Default.KeyboardArrowDown,
                 contentDescription = "Minimizar app",
                 modifier = Modifier
-                    .size(24.dp) // Ajustar tamaño del ícono si es necesario
+                    .size(24.dp)
                     .clickable { activity.moveTaskToBack(true) },
                 tint = Color(0xFF808185)
             )
@@ -53,7 +52,7 @@ fun Header(modifier: Modifier = Modifier) {
                 imageVector = Icons.Default.Close,
                 contentDescription = "Cerrar app",
                 modifier = Modifier
-                    .size(24.dp) // Ajustar tamaño del ícono si es necesario
+                    .size(24.dp)
                     .clickable { activity.finish() },
                 tint = Color(0xFF808185)
             )

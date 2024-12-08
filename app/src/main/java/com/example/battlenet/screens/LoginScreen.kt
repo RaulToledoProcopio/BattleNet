@@ -1,4 +1,4 @@
-package com.example.battlenet.Screens
+package com.example.battlenet.screens
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
@@ -24,7 +24,7 @@ fun LoginScreen(viewModel: LoginViewModel = LoginViewModel()) {
         }
 
         Box(modifier = Modifier.fillMaxSize().padding(10.dp), contentAlignment = Alignment.Center) {
-            Body(Modifier.padding(10.dp), LoginViewModel())
+            Body(Modifier.padding(10.dp), viewModel)
         }
 
         Box(modifier = Modifier.fillMaxSize().padding(10.dp), contentAlignment = Alignment.BottomCenter) {

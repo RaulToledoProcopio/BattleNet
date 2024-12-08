@@ -10,8 +10,8 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
 import com.example.battlenet.ui.theme.BattleNetTheme
-import com.example.battlenet.Screens.LoginScreen
-import com.example.battlenet.Screens.LoginViewModel
+import com.example.battlenet.screens.LoginScreen
+import com.example.battlenet.screens.LoginViewModel
 
 
 class MainActivity : ComponentActivity() {
