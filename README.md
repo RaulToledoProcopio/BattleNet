@@ -84,10 +84,4 @@ El `Footer` es un composable que se encarga de mostrar un pie de página con enl
 - **Interactividad**: El uso de `Modifier.clickable` permite que los textos actúen como enlaces, abriendo URLs mediante `Intent`, lo que facilita la navegación entre recursos externos.
 - **Diseño responsivo**: Los `Modifiers` y las funciones como `fillMaxSize` y `padding` aseguran que la interfaz sea responsiva y se ajuste correctamente a diferentes tamaños de pantalla.
 
-### Consideraciones de Navegación:
-- Aunque no se manejan explícitamente en los archivos proporcionados, se ha dejado abierta la posibilidad de integrar un sistema de navegación utilizando `NavController` o un enfoque similar en futuras iteraciones para manejar las transiciones entre diferentes pantallas.
-
-### Seguridad y Accesibilidad:
-- Si bien el código actual no incluye detalles sobre autenticación o accesibilidad, se recomienda incorporar medidas de seguridad como validación de datos de usuario y opciones de accesibilidad (por ejemplo, etiquetas `contentDescription` en elementos interactivos).
-
 ---
